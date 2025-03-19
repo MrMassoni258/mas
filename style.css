@@ -1,0 +1,47 @@
+body {
+    background: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+h1, h2 {
+    text-shadow: 0 0 5px #00ff00;
+}
+
+button, input[type="submit"] {
+    background: #1a1a1a;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #00ff00;
+    color: #0a0a0a;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    background: #1a1a1a;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 5px;
+    margin: 5px;
+}
+
+.login-container, .dashboard, .storage {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px #00ff00;
+}
