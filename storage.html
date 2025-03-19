@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MMA - Хранилище</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="storage">
+        <h1>MMA - Хранилище</h1>
+        <h2>Скриншоты</h2>
+        {% for file in screenshots %}
+            <img src="/screenshots/{{ file }}" width="200">
+        {% endfor %}
+        <h2>Видео</h2>
+        {% for file in videos %}
+            <video src="/videos/{{ file }}" controls width="200"></video>
+        {% endfor %}
+        <h2>Звук</h2>
+        {% for file in audio %}
+            <audio src="/audio/{{ file }}" controls></audio><br>
+        {% endfor %}
+        <a href="/dashboard">Назад</a>
+    </div>
+</body>
+</html>
